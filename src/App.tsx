@@ -54,14 +54,14 @@ const App = () => {
       }}
       className='h-screen w-screen flex items-center justify-center font-poppins bg-no-repeat bg-cover'
     >
-      <div className='flex flex-col items-center p-12 bg-indigo-800 text-white rounded shadow'>
+      <div className='w-full sm:w-fit flex flex-col items-center p-12 bg-indigo-800 text-white rounded shadow'>
         <div className='flex mb-8'>
           <p className='text-3xl mr-2'>Clima Agora</p>
           <Umbrella fontSize={26} weight='fill' />
         </div>
         <div className='h-10 flex items-center'>
           <input
-            className='h-10 p-2 rounded outline-none transition bg-slate-100 focus:bg-white text-black'
+            className='h-10 w-52 sm:w-fit p-2 rounded outline-none transition bg-slate-100 focus:bg-white text-black'
             type='text'
             placeholder='Busque por uma cidade'
             onChange={({ target: { value } }) => (search.current.city = value)}
